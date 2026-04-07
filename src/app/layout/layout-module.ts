@@ -5,6 +5,7 @@ import { Navbar } from './navbar/navbar';
 import { Footer } from './footer/footer';
 import { MainLayout } from './main-layout/main-layout';
 import { RouterModule } from '@angular/router';
+import { MatCardModule } from '@angular/material/card';
 
 
 
@@ -16,7 +17,8 @@ import { RouterModule } from '@angular/router';
     MainLayout
   ],
   imports: [
-    CommonModule,RouterModule
+    CommonModule,RouterModule,MatCardModule,
+    
   ],
    exports: [MainLayout]
 })

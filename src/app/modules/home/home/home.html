@@ -4,46 +4,48 @@
   <div class="bg-orb orb-2"></div>
   <div class="bg-orb orb-3"></div>
 
-  <section class="hero-section mat-elevation-z8">
-    <h1>🌱 Prithvi Jal</h1>
-    <p>Redefining sustainable packaging with elegant paper bottle solutions.</p>
+<section class="hero-section mat-elevation-z8">
+ 
+
+  <h1>🌱 Prithvi Jal</h1>
+
+  <div class="word-rotator">
+  <span>Eco Innovation</span>
+  <span>Sustainable Packaging</span>
+  <span>Paper Bottle Revolution</span>
+</div>
+
+  <p>
+    Redefining sustainable packaging with elegant paper bottle solutions
+    for a greener tomorrow.
+  </p>
+</section>
+  <section class="owner-section">
+  <div class="owner-card">
     
-  </section>
+    <div class="owner-image">
+      <img src="assets/owner.png" alt="Founder">
+    </div>
 
-  <!-- <section class="about-grid">
-    <mat-card class="premium-card intro-card">
-      <mat-card-title>Who We Are</mat-card-title>
-      <mat-card-content>
-        <p>
-          Prithvi Jal is a purpose-driven eco brand replacing plastic with premium paper-based packaging.
-        </p>
-      </mat-card-content>
-    </mat-card>
+    <div class="owner-content">
+      <h2>Meet Our Founder</h2>
+      <h3>Anshul Gautam</h3>
+      <p>
+        Prithvi Jal was founded with a vision to replace harmful plastic
+        bottles with sustainable and elegant paper-based alternatives.
+        Our mission is to create eco-conscious products that combine
+        innovation, durability, and environmental responsibility.
+      </p>
+      <p>
+        With a strong focus on sustainability and premium design,
+        the founder continues to drive innovation toward a greener future.
+      </p>
+    </div>
 
-    <mat-card class="premium-card">
-      <mat-card-title>🌍 Vision</mat-card-title>
-      <mat-card-content>Lead eco-friendly packaging globally.</mat-card-content>
-    </mat-card>
+  </div>
+</section>
 
-    <mat-card class="premium-card">
-      <mat-card-title>🚀 Mission</mat-card-title>
-      <mat-card-content>Reduce plastic waste with safe alternatives.</mat-card-content>
-    </mat-card>
-
-    <mat-card class="premium-card">
-      <mat-card-title>💡 Why Us?</mat-card-title>
-      <mat-card-content>
-        <ul>
-          <li>Eco-friendly</li>
-          <li>Durable</li>
-          <li>Healthy</li>
-          <li>Luxury look</li>
-        </ul>
-      </mat-card-content>
-    </mat-card>
-  </section> -->
-
-  <section class="products-section">
+   <section class="products-section">
     <h2>Our Premium Bottles</h2>
 
   <div class="product-scroll">
@@ -74,10 +76,16 @@
     </mat-card>
   </section>
 
-  <section class="locations-grid">
-    <mat-card class="premium-card" *ngFor="let city of cities">
-      <mat-card-title>{{ city.name }}</mat-card-title>
-      <mat-card-content>{{ city.desc }}</mat-card-content>
+<section class="locations-section">
+  <h2>🌍 Locations We Serve</h2>
+
+  <div class="locations-grid">
+    <mat-card class="location-card" *ngFor="let city of cities">
+      <div class="location-content">
+        <h3>{{ city.name }}</h3>
+        <p>{{ city.desc }}</p>
+      </div>
     </mat-card>
-  </section>
+  </div>
+</section>
 </div>
