@@ -1,11 +1,35 @@
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   width: 100%;
   overflow-x: hidden;
+  background: #06101a;
+  color: #e2e8f0;
+  font-family: 'Poppins', 'Roboto', sans-serif;
 }
 
-* {
+body {
+  min-height: 100vh;
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-}/* You can add global styles to this file, and also import other style files */
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+/* You can add global styles to this file, and also import other style files */

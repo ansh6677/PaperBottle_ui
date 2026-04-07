@@ -1,27 +1,66 @@
-<header class="header">
-  <video class="header-video" autoplay muted loop playsinline>
-    <source src="/assets/header1.mp4" type="video/mp4" />
-  </video>
+<header class="header" id="top">
+  <img
+    class="header-video"
+    src="/assets/header.gif"
+    alt="Prithvi Jal hero banner"
+  />
 
   <div class="overlay">
-    <!-- TOP NAVBAR -->
-    <div class="navbar">
-     
+    <div class="nav-shell">
+      <a class="brand" routerLink="/">
+        <img src="/assets/logo.png" alt="Prithvi Jal logo" />
+        <div>
+          <span class="brand-kicker">Prithvi Jal</span>
+          <strong>Paper Bottle Co.</strong>
+        </div>
+      </a>
 
       <nav class="menu">
-        <a routerLink="/">About</a>
-        <a routerLink="/directory">What I Offer</a>
-       
-        <a routerLink="/contact">Properties</a>
-        <a routerLink="/contact">Contact</a>
+        <a href="#story">Story</a>
+        <a href="#products">Products</a>
+        <a href="#impact">Impact</a>
+        <a href="#contact">Contact</a>
       </nav>
 
-   
+      <a class="nav-cta" href="#products">Explore Range</a>
     </div>
 
-    <!-- HERO TEXT -->
-    <div class="hero-content">
-      <h1>Prithvi Jal - Pure by Nature,<br />Powerful for Life.</h1>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">
+          <i class="fa-solid fa-leaf"></i>
+          Sustainable packaging, reimagined
+        </span>
+
+        <h1>Make every sip look premium and planet-friendly.</h1>
+
+        <p>
+          Prithvi Jal blends sleek branding, eco-conscious materials, and modern
+          shelf appeal to help businesses switch from plastic to standout paper
+          bottle packaging.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#products">View Collection</a>
+          <a class="btn btn-secondary" href="#story">Meet the Founder</a>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <div class="preview-card">
+          <span class="preview-pill">Signature collection</span>
+          <img
+            class="preview-image"
+            src="/assets/pic5.jpeg"
+            alt="Prithvi Jal bottle preview"
+          />
+          <h3>Minimal • Natural • Premium</h3>
+          <p>
+            A refined visual direction for retail shelves, hospitality counters,
+            and eco-conscious brand launches.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </header>

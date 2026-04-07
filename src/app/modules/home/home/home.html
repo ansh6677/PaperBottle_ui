@@ -1,91 +1,120 @@
-
 <div class="about-page-bg">
   <div class="bg-orb orb-1"></div>
   <div class="bg-orb orb-2"></div>
   <div class="bg-orb orb-3"></div>
 
-<section class="hero-section mat-elevation-z8">
- 
-
-  <h1>🌱 Prithvi Jal</h1>
-
-  <div class="word-rotator">
-  <span>Eco Innovation</span>
-  <span>Sustainable Packaging</span>
-  <span>Paper Bottle Revolution</span>
-</div>
-
-  <p>
-    Redefining sustainable packaging with elegant paper bottle solutions
-    for a greener tomorrow.
-  </p>
-</section>
-  <section class="owner-section">
-  <div class="owner-card">
-    
-    <div class="owner-image">
-      <img src="assets/owner.png" alt="Founder">
+  <section class="intro-strip">
+    <div class="strip-card" *ngFor="let item of highlights">
+      <strong>{{ item.value }}</strong>
+      <span>{{ item.label }}</span>
     </div>
-
-    <div class="owner-content">
-      <h2>Meet Our Founder</h2>
-      <h3>Anshul Gautam</h3>
-      <p>
-        Prithvi Jal was founded with a vision to replace harmful plastic
-        bottles with sustainable and elegant paper-based alternatives.
-        Our mission is to create eco-conscious products that combine
-        innovation, durability, and environmental responsibility.
-      </p>
-      <p>
-        With a strong focus on sustainability and premium design,
-        the founder continues to drive innovation toward a greener future.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-   <section class="products-section">
-    <h2>Our Premium Bottles</h2>
-
-  <div class="product-scroll">
-    <div class="product-scroll-track">
-      <mat-card class="product-card" *ngFor="let item of products">
-        <img mat-card-image [src]="item" alt="bottle" />
-      </mat-card>
-
-      <mat-card class="product-card" *ngFor="let item of products">
-        <img mat-card-image [src]="item" alt="bottle" />
-      </mat-card>
-    </div>
-  </div>
   </section>
 
-  <section class="stats-grid">
-    <mat-card class="stat-card">
-      <h2>10K+</h2>
-      <p>Bottles Sold</p>
-    </mat-card>
-    <mat-card class="stat-card">
-      <h2>5K+</h2>
-      <p>Happy Customers</p>
-    </mat-card>
-    <mat-card class="stat-card">
-      <h2>100%</h2>
-      <p>Eco Friendly</p>
-    </mat-card>
-  </section>
+  <section class="owner-section" id="story">
+    <div class="section-heading left-align">
+      <span class="eyebrow">Founder’s vision</span>
+      <h2>Built to replace ordinary packaging with something people notice.</h2>
+    </div>
 
-<section class="locations-section">
-  <h2>🌍 Locations We Serve</h2>
-
-  <div class="locations-grid">
-    <mat-card class="location-card" *ngFor="let city of cities">
-      <div class="location-content">
-        <h3>{{ city.name }}</h3>
-        <p>{{ city.desc }}</p>
+    <div class="owner-card">
+      <div class="owner-image">
+        <img src="assets/owner.jpeg" alt="Founder Anshul Gautam" loading="lazy" />
       </div>
+
+      <div class="owner-content">
+        <span class="owner-badge">Anshul Gautam</span>
+        <h3>Designing a cleaner future, one bottle at a time.</h3>
+        <p>
+          Prithvi Jal was created to move everyday packaging away from wasteful
+          plastic and toward a more refined, responsible alternative. The focus is
+          simple: make sustainability feel premium, practical, and desirable.
+        </p>
+        <p>
+          From product appearance to the brand experience it creates, every detail
+          is shaped to help businesses look modern while making a greener choice.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="products-section" id="products">
+    <div class="section-heading">
+      <span class="eyebrow">Curated collection</span>
+      <h2>Packaging that feels premium on every shelf.</h2>
+      <p>
+        Thoughtfully designed bottle concepts for wellness brands, retail counters,
+        events, and hospitality experiences.
+      </p>
+    </div>
+
+    <div class="product-grid">
+      <mat-card class="product-card" *ngFor="let item of products">
+        <div class="product-image-wrap">
+          <span class="product-badge">{{ item.tag }}</span>
+          <img mat-card-image [src]="item.image" [alt]="item.title" loading="lazy" />
+        </div>
+
+        <div class="product-info">
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.description }}</p>
+        </div>
+      </mat-card>
+    </div>
+  </section>
+
+  <section class="features-section" id="impact">
+    <div class="section-heading">
+      <span class="eyebrow">Why brands like it</span>
+      <h2>Modern UI-inspired presentation, backed by smart product storytelling.</h2>
+    </div>
+
+    <div class="features-grid">
+      <article class="feature-card" *ngFor="let feature of features">
+        <div class="icon-wrap">
+          <i [class]="feature.icon"></i>
+        </div>
+        <h3>{{ feature.title }}</h3>
+        <p>{{ feature.description }}</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="stats-wrapper">
+    <mat-card class="stat-card" *ngFor="let stat of stats">
+      <h2>{{ stat.value }}</h2>
+      <p>{{ stat.label }}</p>
     </mat-card>
-  </div>
-</section>
+  </section>
+
+  <section class="locations-section">
+    <div class="section-heading">
+      <span class="eyebrow">Growing footprint</span>
+      <h2>Serving brands across key Indian markets.</h2>
+    </div>
+
+    <!-- <div class="locations-grid">
+      <mat-card class="location-card" *ngFor="let city of cities">
+        <div class="location-content">
+          <h3>{{ city.name }}</h3>
+          <p>{{ city.desc }}</p>
+        </div>
+      </mat-card>
+    </div> -->
+  </section>
+
+  <section class="cta-banner" id="contact">
+    <div>
+      <span class="eyebrow">Let’s build greener packaging</span>
+      <h2>Ready to give your brand a more sustainable edge?</h2>
+      <p>
+        Partner with Prithvi Jal for packaging that customers remember and the
+        planet appreciates.
+      </p>
+    </div>
+
+    <div class="cta-actions">
+      <a class="cta-primary" href="mailto:info@prithvijal.com">Email Us</a>
+      <a class="cta-secondary" href="tel:+918319023587">Call Now</a>
+    </div>
+  </section>
 </div>
