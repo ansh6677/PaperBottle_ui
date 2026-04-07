@@ -4,6 +4,8 @@ import { BrowserModule, provideClientHydration, withEventReplay } from '@angular
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { LayoutModule } from './layout/layout-module';
+import { MatCardModule } from '@angular/material/card';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,10 @@ import { LayoutModule } from './layout/layout-module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LayoutModule
+    LayoutModule,
+     CommonModule,
+    MatCardModule,
+   
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),

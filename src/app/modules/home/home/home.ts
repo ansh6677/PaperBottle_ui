@@ -7,6 +7,19 @@ import { AfterViewInit, Component, HostListener } from '@angular/core';
   styleUrl: './home.css',
 })
 export class Home implements AfterViewInit {
+  products = [
+  'assets/pic2.png',
+  'assets/pic3.png',
+  'assets/pic4.png',
+  'assets/pic2.png'
+];
+
+cities = [
+  { name: 'Mumbai', desc: 'Retail and business delivery' },
+  { name: 'Delhi', desc: 'Corporate supply chain' },
+  { name: 'Bangalore', desc: 'Startup ecosystem' },
+  { name: 'Kolkata', desc: 'Expanding green impact' }
+];
   private floatElements: HTMLElement[] = [];
  ngAfterViewInit(): void {
    this.floatElements = Array.from(document.querySelectorAll<HTMLElement>('[data-float]'));
