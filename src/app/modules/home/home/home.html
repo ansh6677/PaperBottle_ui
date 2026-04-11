@@ -3,12 +3,79 @@
   <div class="bg-orb orb-2"></div>
   <div class="bg-orb orb-3"></div>
 
-  <section class="intro-strip">
-    <div class="strip-card" *ngFor="let item of highlights">
-      <strong>{{ item.value }}</strong>
-      <span>{{ item.label }}</span>
+
+
+  <section class="live-impact-section">
+  <div class="impact-card">
+    <div class="live-badge">LIVE</div>
+
+    <div class="earth-wrap">
+      <img src="assets/earth.png" alt="Earth" class="rotating-earth" />
     </div>
-  </section>
+
+    <div class="impact-content">
+      <p class="impact-label">Plastic Bottles Replaced</p>
+      <h2>{{ liveBottleCount() }}</h2>
+
+     <div class="material-grid">
+  <div class="material-box" *ngFor="let material of materials">
+    <i [class]="material.icon" class="material-icon"></i>
+    <p>{{ material.name }}</p>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+
+<section class="crisis-section">
+  <div class="crisis-card">
+    <h2 class="gradient-heading">The Plastic Crisis</h2>
+
+    <p>
+      Over <strong>1 million plastic bottles</strong> are sold every minute.
+      Less than <strong>50%</strong> are recycled. The rest poison our soil,
+      choke our oceans, and harm wildlife.
+    </p>
+  </div>
+</section>
+
+<section class="impact-cards-section">
+  <div class="impact-info-card" *ngFor="let item of impactCards">
+    <div class="impact-icon">{{ item.icon }}</div>
+    <h3>{{ item.title }}</h3>
+    <p>{{ item.description }}</p>
+
+    <div class="progress-bar">
+     <div class="progress-fill" [style.width.%]="item.progress"
+     [style.animationDuration.s]="item.speed">
+</div>
+    </div>
+  </div>
+</section>
+
+<section class="alternatives-section">
+  <div class="section-heading">
+    <h2 class="gradient-heading">Sustainable Alternatives</h2>
+    <p>Eco-friendly options to replace plastic bottles</p>
+  </div>
+
+  <div class="alt-grid">
+    <div class="alt-card" *ngFor="let item of alternatives">
+      
+      <div class="alt-icon">
+        {{ item.icon }}
+      </div>
+
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+
+      <ul>
+        <li *ngFor="let point of item.points">✔ {{ point }}</li>
+      </ul>
+
+    </div>
+  </div>
+</section>
 
   <section class="owner-section" id="story">
     <div class="section-heading left-align">
@@ -92,14 +159,7 @@
       <h2>Serving brands across key Indian markets.</h2>
     </div>
 
-    <!-- <div class="locations-grid">
-      <mat-card class="location-card" *ngFor="let city of cities">
-        <div class="location-content">
-          <h3>{{ city.name }}</h3>
-          <p>{{ city.desc }}</p>
-        </div>
-      </mat-card>
-    </div> -->
+
   </section>
 
   <section class="cta-banner" id="contact">
