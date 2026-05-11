@@ -142,21 +142,21 @@ startLiveCounter() {
     icon: '🌊',
     title: 'Ocean Pollution',
     description: '8 million tons of plastic enter oceans annually, threatening marine species.',
-    progress: 15,
+    progress: 88,
      speed: 3
   },
   {
     icon: '🦌',
     title: 'Wildlife Threat',
     description: 'Millions of animals die yearly from plastic ingestion and entanglement.',
-    progress: 40,
+    progress: 77,
      speed: 3
   },
   {
     icon: '💧',
     title: 'Water Contamination',
     description: 'Microplastics found in 90% of bottled water.',
-    progress: 25,
+    progress: 67,
      speed: 4
   }
 ];
