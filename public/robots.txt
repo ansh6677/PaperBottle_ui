@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Update this to your live production domain after deployment
-Sitemap: https://prithvijal.com/sitemap.xml
+Sitemap: https://Pavitra Drop9.com/sitemap.xml
