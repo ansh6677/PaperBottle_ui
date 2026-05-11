@@ -56,11 +56,44 @@
 .brand {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
   text-decoration: none;
-  min-width: max-content;
-}
 
+  min-width: 0;
+  flex: 1;
+}
+.brand div {
+  min-width: 0;
+}
+.brand strong {
+
+  display: block;
+
+  font-size: clamp(10px, 1.8vw, 16px);
+
+  line-height: 1.3;
+
+  white-space: normal;
+
+  overflow-wrap: anywhere;
+}
+@media (max-width: 640px) {
+
+  .nav-shell {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .brand {
+    width: 100%;
+  }
+
+  .menu {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
 .brand img {
   width: 72px;
   height: 72px;
