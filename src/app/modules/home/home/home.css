@@ -216,13 +216,19 @@ section[id] {
 }
 
 .product-image-wrap {
-  position: relative;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  overflow: hidden;
 }
 
 .product-image-wrap img {
-  height: 280px;
   width: 100%;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
+  transform: scale(1.15);
 }
 
 .product-badge {
@@ -1054,4 +1060,54 @@ button:disabled {
 
   box-shadow:
     0 12px 30px rgba(37, 99, 235, 0.35);
+}
+
+/* CERTIFICATE SECTION */
+.certificate-section {
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.certificate-card {
+  max-width: 900px;
+  margin: 30px auto 0;
+
+  padding: 18px;
+
+  border-radius: 28px;
+
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.certificate-card img {
+  width: 100%;
+  display: block;
+
+  border-radius: 20px;
+
+  object-fit: cover;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .certificate-section {
+    padding: 14px;
+  }
+
+  .certificate-card {
+    padding: 12px;
+    border-radius: 20px;
+  }
+
+  .certificate-card img {
+    border-radius: 14px;
+  }
+
 }

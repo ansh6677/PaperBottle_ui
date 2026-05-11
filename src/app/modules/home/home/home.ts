@@ -42,29 +42,30 @@ get co2Saved(): number {
 
   products = [
     {
-      image: 'assets/pic2.jpeg',
+      image: 'assets/pic1.jpeg',
       title: 'Signature Mineral Bottle',
-      tag: 'Best Seller',
+      
       description: 'Clean silhouette with a premium matte finish for modern wellness brands.',
     },
     {
-      image: 'assets/pic3.jpeg',
+      image: 'assets/pic3.png',
       title: 'Retail Display Edition',
-      tag: 'Shelf Ready',
+      
       description: 'Designed to stand out in cafés, boutiques, and curated eco product displays.',
     },
     {
-      image: 'assets/pic4.jpeg',
+      image: 'assets/pic2.jpeg',
       title: 'Event & Hospitality Pack',
-      tag: 'Custom Branding',
+     
       description: 'A polished bottle concept for launches, gifting, and sustainable guest experiences.',
     },
     {
-      image: 'assets/pic2.jpeg',
+      image: 'assets/pic1.jpeg',
       title: 'Minimal Luxe Series',
-      tag: 'Trending Look',
+     
       description: 'Elegant and brand-forward packaging that pairs sustainability with visual appeal.',
     },
+       
   ];
 
   features = [
