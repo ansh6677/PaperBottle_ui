@@ -180,14 +180,14 @@ alternatives = [
     ]
   },
    {
-    icon: '🍶',
-    title: 'Glass Bottles',
-    description: 'Premium & reusable option',
-    points: [
-      '100% recyclable',
-      'No microplastics'
-    ]
-  }
+  icon: '🧃',
+  title: 'Paper Bottles',
+  description: 'Lightweight & eco-friendly packaging',
+  points: [
+    'Biodegradable',
+    'Reduces plastic waste'
+  ]
+}
 ];
 
 asiaCountries = [
