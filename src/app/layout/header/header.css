@@ -108,6 +108,110 @@
   font-size: 1.15rem;
   font-weight: 700;
 }
+.hero-actions{
+  display:flex;
+  gap:18px;
+  flex-wrap:wrap;
+  margin-top:32px;
+}
+
+.hero-btn{
+  flex:1 1 220px;
+  display:flex;
+  align-items:center;
+  gap:14px;
+
+  padding:18px 20px;
+  border-radius:22px;
+
+  text-decoration:none;
+  color:#fff;
+
+  backdrop-filter:blur(14px);
+
+  transition:0.3s ease;
+  border:1px solid rgba(255,255,255,0.12);
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.22);
+}
+
+.hero-btn:hover{
+  transform:translateY(-5px) scale(1.02);
+}
+
+.hero-btn i{
+  font-size:24px;
+  min-width:48px;
+  height:48px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:14px;
+
+  background:rgba(255,255,255,0.12);
+}
+
+.hero-btn span{
+  display:flex;
+  flex-direction:column;
+}
+
+.hero-btn strong{
+  font-size:16px;
+  font-weight:700;
+}
+
+.hero-btn small{
+  font-size:13px;
+  opacity:0.8;
+  margin-top:2px;
+}
+
+/* BUTTON THEMES */
+
+.primary-btn{
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0,210,255,0.22),
+      rgba(37,99,235,0.25)
+    );
+}
+
+.glass-btn{
+  background:
+    linear-gradient(
+      135deg,
+      rgba(16,185,129,0.22),
+      rgba(6,182,212,0.22)
+    );
+}
+
+.secondary-btn{
+  background:
+    linear-gradient(
+      135deg,
+      rgba(124,58,237,0.24),
+      rgba(236,72,153,0.22)
+    );
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .hero-actions{
+    flex-direction:column;
+  }
+
+  .hero-btn{
+    width:100%;
+  }
+
+}
 
 .brand-kicker {
   display: block;
