@@ -6,109 +6,199 @@
 
 
   <section class="live-impact-section">
-  <div class="impact-card">
-    <div class="live-badge">LIVE</div>
+    <div class="impact-card">
+      <div class="live-badge">LIVE</div>
 
-    <div class="earth-wrap">
-      <img src="assets/earth.png" alt="Earth" class="rotating-earth" />
-    </div>
-
-    <div class="impact-content">
-      <p class="impact-label">Plastic Bottles Replaced</p>
-      <h2>{{ liveBottleCount() }}</h2>
-
-     <div class="material-grid">
-  <div class="material-box" *ngFor="let material of materials">
-    <i [class]="material.icon" class="material-icon"></i>
-    <p>{{ material.name }}</p>
-  </div>
-</div>
-    </div>
-  </div>
-</section>
-
-<section class="crisis-section">
-  <div class="crisis-card">
-    <h2 class="gradient-heading">The Plastic Crisis</h2>
-
-    <p>
-      Over <strong>1 million plastic bottles</strong> are sold every minute.
-      Less than <strong>50%</strong> are recycled. The rest poison our soil,
-      choke our oceans, and harm wildlife.
-    </p>
-  </div>
-</section>
-
-<section class="impact-cards-section">
-  <div class="impact-info-card" *ngFor="let item of impactCards">
-    <div class="impact-icon">{{ item.icon }}</div>
-    <h3>{{ item.title }}</h3>
-    <p>{{ item.description }}</p>
-
-    <div class="progress-bar">
-     <div class="progress-fill" [style.width.%]="item.progress"
-     [style.animationDuration.s]="item.speed">
-</div>
-    </div>
-  </div>
-</section>
-<!-- latest deploymen      -->
-
-<section class="alternatives-section">
-  <div class="section-heading">
-    <h2 class="gradient-heading">Sustainable Alternatives</h2>
-    <p>Eco-friendly options to replace plastic bottles</p>
-  </div>
-
-  <div class="alt-grid">
-    <div class="alt-card" *ngFor="let item of alternatives">
-      
-      <div class="alt-icon">
-        {{ item.icon }}
+      <div class="earth-wrap">
+        <img src="assets/earth.png" alt="Earth" class="rotating-earth" />
       </div>
 
+      <div class="impact-content">
+        <p class="impact-label">Plastic Bottles Replaced</p>
+        <h2>{{ liveBottleCount() }}</h2>
+
+        <div class="material-grid">
+          <div class="material-box" *ngFor="let material of materials">
+            <i [class]="material.icon" class="material-icon"></i>
+            <p>{{ material.name }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="crisis-section">
+    <div class="crisis-card">
+      <h2 class="gradient-heading">The Plastic Crisis</h2>
+
+      <p>
+        Over <strong>1 million plastic bottles</strong> are sold every minute.
+        Less than <strong>50%</strong> are recycled. The rest poison our soil,
+        choke our oceans, and harm wildlife.
+      </p>
+    </div>
+  </section>
+
+  <section class="impact-cards-section">
+    <div class="impact-info-card" *ngFor="let item of impactCards">
+      <div class="impact-icon">{{ item.icon }}</div>
       <h3>{{ item.title }}</h3>
       <p>{{ item.description }}</p>
 
-      <ul>
-        <li *ngFor="let point of item.points">✔ {{ point }}</li>
-      </ul>
-
+      <div class="progress-bar">
+        <div class="progress-fill" [style.width.%]="item.progress" [style.animationDuration.s]="item.speed">
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+  <!-- latest deploymen      -->
+
+  <section class="alternatives-section">
+    <div class="section-heading">
+      <h2 class="gradient-heading">sustainable Bottels,Healthier Tomorrow.</h2>
+      <p>The Future of hydration isn't plastic.It's natural reusable ,and earth-friendly.</p>
+    </div>
+
+    <div class="alt-grid">
+      <div class="alt-card" *ngFor="let item of alternatives">
+
+        <div class="alt-icon">
+          {{ item.icon }}
+        </div>
+
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.description }}</p>
+
+        <ul>
+          <li *ngFor="let point of item.points">✔ {{ point }}</li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
 
   <section class="owner-section" id="story">
     <div class="section-heading left-align">
       <span class="eyebrow">Founder’s vision</span>
-      <h2>Built to replace ordinary packaging with something people notice.</h2>
+      <h2>“Pure Water. Pure Life. Back to Nature.”</h2>
     </div>
 
     <div class="owner-card">
       <div class="owner-image">
-        <img src="assets/owner.jpeg" alt="Founder Anshul Gautam" loading="lazy" />
+        <img src="assets/owner.jpeg" alt="Founder Mr.Anshul Gautam" loading="lazy" />
       </div>
 
       <div class="owner-content">
-        <span class="owner-badge">Anshul Gautam</span>
-        <h3>Designing a cleaner future, one bottle at a time.</h3>
+        <span class="owner-badge">Mr.Anshul Gautam</span>
+        <h3>This is not just a product—it's a movement towards purity, sustainability, and life.</h3>
         <p>
-          Prithvi Jal was created to move everyday packaging away from wasteful
-          plastic and toward a more refined, responsible alternative. The focus is
-          simple: make sustainability feel premium, practical, and desirable.
+          My vision is to transform the way the world consumes water by eliminating plastic bottles and returning to
+          natural, organic alternatives inspired by traditional practices.
+          Water is the most essential part of human life. While we may survive without food for some time, we cannot
+          live without water. Yet today, the very source of life is often stored and consumed through plastic, which
+          harms not only human health but also animals and the environment.
+          I aim to reintroduce a healthier, more sustainable way of drinking water by using organic materials such as
+          clay, glass, and other natural resources—just like in earlier times. These materials are not only eco-friendly
+          but also help maintain the natural purity and quality of water.
+          This vision is about more than just bottles—it is about creating awareness, protecting life, and building a
+          future where every sip of water is clean, safe, and connected to nature.
+          By replacing plastic with organic solutions, we can reduce pollution, protect ecosystems, and give both humans
+          and animals a healthier way to live.
+
+
         </p>
         <p>
-          From product appearance to the brand experience it creates, every detail
-          is shaped to help businesses look modern while making a greener choice.
+
+
         </p>
       </div>
     </div>
   </section>
 
+
+  <!-- PLEDGE SECTION -->
+<section class="pledge-section" id="pledge-section" >
+
+  <div class="pledge-card">
+
+    <!-- LIVE COUNT -->
+    <div class="pledge-stats">
+
+      <h2 class="counter">
+        {{ livePledgeCount | number }}
+      </h2>
+
+      <p>Pledges Signed</p>
+
+    </div>
+
+    <!-- FORM -->
+    <form  [formGroup]="pledgeForm" (ngSubmit)="submitPledge()">
+
+      <div class="form-group">
+        <input
+          type="text"
+          formControlName="name"
+          placeholder="Full Name" />
+      </div>
+
+      <div class="form-group">
+        <input
+          type="email"
+          formControlName="email"
+          placeholder="Email Address" />
+      </div>
+
+      <div class="form-group">
+        <select formControlName="pledgeType">
+
+          <option value="">
+            Select Your Pledge
+          </option>
+
+          <option value="paper">
+            I pledge to use Paper Bottles
+          </option>
+
+          <option value="glass">
+            I pledge to use Glass Bottles
+          </option>
+
+          <option value="steel">
+            I pledge to use Steel Bottles
+          </option>
+
+        </select>
+      </div>
+
+      <button
+        type="submit"
+        [disabled]="pledgeForm.invalid || loading">
+
+        @if (loading) {
+          Submitting...
+        } @else {
+          Confirm Pledge ✓
+        }
+
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+
+
+
+
+  <!-- <section>add here</section> -->
+
   <section class="products-section" id="products">
     <div class="section-heading">
-      <span class="eyebrow">Curated collection</span>
-      <h2>Packaging that feels premium on every shelf.</h2>
+     
+      <h2>Our Brand Sample</h2>
       <p>
         Thoughtfully designed bottle concepts for wellness brands, retail counters,
         events, and hospitality experiences.
@@ -130,11 +220,88 @@
     </div>
   </section>
 
-  <section class="features-section" id="impact">
-    <div class="section-heading">
-      <span class="eyebrow">Why brands like it</span>
-      <h2>Modern UI-inspired presentation, backed by smart product storytelling.</h2>
+
+
+  <!-- IMPACT CALCULATOR -->
+<section class="impact-calculator-section">
+
+  <div class="impact-calculator-card">
+
+    <div class="calculator-header">
+
+      <h2 class="gradient-title">
+        Your Impact Calculator
+      </h2>
+
+      <p>
+        See how switching from plastic changes the world.
+      </p>
+
     </div>
+
+    <!-- RANGE -->
+    <div class="slider-wrap">
+
+      <div class="slider-top">
+        <span>Bottles per month</span>
+      </div>
+
+      <input
+        type="range"
+        min="10"
+        max="500"
+        [(ngModel)]="bottlesPerMonth"
+        class="impact-slider"
+      />
+
+      <div class="slider-values">
+        <span>10</span>
+
+        <div class="selected-value">
+          {{ bottlesPerMonth }}
+        </div>
+
+        <span>500</span>
+      </div>
+
+    </div>
+
+    <!-- STATS -->
+    <div class="impact-stats">
+
+      <div class="impact-box">
+
+        <p>Plastic Avoided</p>
+
+        <h3>
+          {{ bottlesPerMonth }}
+        </h3>
+
+      </div>
+
+      <div class="impact-box">
+
+        <p>CO₂ Saved (kg)</p>
+
+        <h3>
+          {{ co2Saved }}
+        </h3>
+
+      </div>
+
+    </div>
+
+    <!-- BUTTON -->
+    <button class="impact-btn" (click)="goToPledge()">
+      Make the Switch
+    </button>
+
+  </div>
+
+</section>
+<!-- 
+  <section class="features-section" id="impact">
+ 
 
     <div class="features-grid">
       <article class="feature-card" *ngFor="let feature of features">
@@ -145,14 +312,14 @@
         <p>{{ feature.description }}</p>
       </article>
     </div>
-  </section>
+  </section> -->
 
-  <section class="stats-wrapper">
+  <!-- <section class="stats-wrapper">
     <mat-card class="stat-card" *ngFor="let stat of stats">
       <h2>{{ stat.value }}</h2>
       <p>{{ stat.label }}</p>
     </mat-card>
-  </section>
+  </section> -->
 
   <section class="locations-section">
     <div class="section-heading">

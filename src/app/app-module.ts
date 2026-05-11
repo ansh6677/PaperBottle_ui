@@ -6,6 +6,7 @@ import { App } from './app';
 import { LayoutModule } from './layout/layout-module';
 import { MatCardModule } from '@angular/material/card';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { CommonModule } from '@angular/common';
     LayoutModule,
      CommonModule,
     MatCardModule,
+    ReactiveFormsModule
    
   ],
   providers: [

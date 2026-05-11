@@ -1,4 +1,10 @@
 import { ChangeDetectorRef, Component, NgZone, OnInit, signal } from '@angular/core';
+import {
+  FormBuilder,
+  Validators,
+  ReactiveFormsModule,
+  FormGroup
+} from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +13,27 @@ import { ChangeDetectorRef, Component, NgZone, OnInit, signal } from '@angular/c
   styleUrl: './home.css',
 })
 export class Home implements OnInit{
+  loading = false;
+
+livePledgeCount = 128400;
+pledgeForm!: FormGroup;
+
   constructor(private cdr: ChangeDetectorRef,
-    private zone: NgZone
-  ) {}
+    private zone: NgZone,
+    private fb: FormBuilder
+  ) {
+      this.pledgeForm = this.fb.group({
+  name: ['', Validators.required],
+  email: ['', [Validators.required, Validators.email]],
+  pledgeType: ['', Validators.required]
+});
+  }
+bottlesPerMonth = 50;
+
+get co2Saved(): number {
+  return Number((this.bottlesPerMonth * 0.09).toFixed(1));
+}
+
   highlights = [
     { value: '65%', label: 'lower plastic dependency' },
     { value: '24h', label: 'sample response window' },
@@ -165,4 +189,55 @@ alternatives = [
     ]
   }
 ];
+
+asiaCountries = [
+  { name: 'India', icon: 'flag-icon-in' },
+  { name: 'Japan', icon: 'flag-icon-jp' },
+  { name: 'Thailand', icon: 'flag-icon-th' },
+  { name: 'Singapore', icon: 'flag-icon-sg' }
+];
+
+asiaPlasticAvoided = 50000;
+asiaCO2Saved = 4500;
+
+asiaCountryCount() {
+  return this.asiaCountries.length;
+}
+
+submitPledge() {
+
+  if (this.pledgeForm.invalid) {
+    return;
+  }
+
+  this.loading = true;
+
+  const payload = {
+    ...this.pledgeForm.value,
+    createdAt: new Date()
+  };
+
+  console.log(payload);
+
+  setTimeout(() => {
+
+    this.livePledgeCount++;
+
+    this.loading = false;
+
+    this.pledgeForm.reset();
+
+  }, 1500);
+}
+
+goToPledge() {
+  const section = document.getElementById('pledge-section');
+
+  if (section) {
+    section.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }
+}
 }
