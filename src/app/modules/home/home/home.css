@@ -674,7 +674,7 @@ section[id] {
 
 .pledge-stats p {
   font-size: 18px;
-  color: #cbd5e1;
+  color: #121213;
 }
 
 form {
@@ -687,18 +687,18 @@ form {
 .form-group select {
   width: 100%;
   padding: 16px 18px;
-
   border-radius: 16px;
-
   border: 1px solid rgba(255, 255, 255, 0.08);
-
   background: rgba(255, 255, 255, 0.04);
-
   color: white;
-
   font-size: 15px;
-
   outline: none;
+}
+
+/* 👇 IMPORTANT FIX */
+.form-group select option {
+  color: black;
+  background: white;
 }
 
 .form-group input::placeholder {
